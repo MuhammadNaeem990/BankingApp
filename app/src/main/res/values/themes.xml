@@ -3,7 +3,9 @@
     <style name="Base.Theme.BankingApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@color/white</item> <!-- White background for both modes -->
     </style>
 
     <style name="Theme.BankingApp" parent="Base.Theme.BankingApp" />
+
 </resources>

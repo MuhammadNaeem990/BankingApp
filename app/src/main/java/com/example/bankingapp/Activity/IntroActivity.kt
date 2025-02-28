@@ -1,12 +1,9 @@
-package com.example.bankingapp
+package com.example.bankingapp.Activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.bankingapp.databinding.ActivityIntroBinding
 
 class IntroActivity : AppCompatActivity() {
@@ -17,11 +14,13 @@ class IntroActivity : AppCompatActivity() {
 		binding = ActivityIntroBinding.inflate(layoutInflater)
 		setContentView(binding.root)
 		
-		window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager
-			.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
+		window.setFlags(
+			WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+			WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+		)
 		
 		binding.startBtn.setOnClickListener {
-			startActivity(Intent(this,MainActivity::class.java))
+			startActivity(Intent(this, MainActivity::class.java))
 		}
 	}
 }
